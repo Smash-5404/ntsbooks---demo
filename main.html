@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NTSBook Dashboard</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="assets/css/components.css" />
+  <link href="assets/icons/boxicons.min.css" rel="stylesheet">
+  <script src="assets/js/app.js" defer></script>
+</head>
+<body>
+ <aside class="sidebar" id="sidebar">
+  <div class="sidebar-header">
+    <div class="logo-name">
+      <img src="assets/images/ntsbook_logo-removebg-preview.png" alt="Logo" class="logo"> 
+      <button id="expandSidebar" class="expand-btn" aria-label="Expand sidebar"><i class='bx bx-dock-right-arrow'></i></button>
+      <h2 class="brand-name">NTSBook</h2>
+    </div>
+    <button id="minimizeBtn" class="minimize-btn" aria-label="Minimize sidebar"><i class="bx bx-dock-left-arrow"></i></button>
+    <button id="closeSidebar" class="close-btn"><i class='bx bx-x'></i></button>
+  </div>
+  <nav class="menu">
+    <a href="#" data-tooltip="Dashboard"><i class='bxr  bx-dashboard'  ></i> <span class="label">Dashboard</span></a>
+
+    <div class="submenu-wrapper">
+      <button class="submenu-toggle" data-tooltip="Master">
+        <i class='bx bx-book-content'></i><span class="label">Master</span>
+        <i class='bx bx-chevron-right submenu-arrow'></i>
+      </button>
+      <div class="submenu">
+        <a href="#" data-tooltip="Organisation"><i class='bx bx-buildings'></i><span class="label">Organisation</span></a>
+        <a href="#" data-tooltip="Branch"><i class='bx bx-git-branch'></i><span class="label">Branch</span></a>
+        <a href="#" data-tooltip="Location"><i class='bx bx-map'></i><span class="label">Location</span></a>
+      </div>
+    </div>
+
+    <div class="submenu-wrapper">
+      <button class="submenu-toggle" data-tooltip="Client">
+        <i class='bx bx-user-circle'></i><span class="label">Client</span>
+        <i class='bx bx-chevron-right submenu-arrow'></i>
+      </button>
+      <div class="submenu">
+        <a href="#" data-tooltip="Customer"><i class='bx bx-user'></i><span class="label">Customer</span></a>
+        <a href="#" data-tooltip="Supplier"><i class='bx bx-store'></i><span class="label">Supplier</span></a>
+      </div>
+    </div>
+
+    <a href="#" data-tooltip="Inventory"><i class='bx bx-cube'></i><span class="label">Inventory</span></a>
+    <a href="#" data-tooltip="Estimation"><i class='bx bx-calculator'></i><span class="label">Estimation</span></a>
+    <a href="#" data-tooltip="Day Books"><i class='bx bx-book'></i><span class="label">Day Books</span></a>
+    <a href="#" data-tooltip="Delivery"><i class='bx bx-truck'></i><span class="label">Delivery</span></a>
+    <a href="#" data-tooltip="Invoice"><i class='bx bx-receipt'></i><span class="label">Invoice</span></a>
+    <a href="#" data-tooltip="Returns"><i class='bx bx-undo'></i><span class="label">Returns</span></a>
+    <a href="#" data-tooltip="Reports"><i class='bx bx-bar-chart'></i><span class="label">Reports</span></a>
+    <a href="#" data-tooltip="Online Store"><i class='bx bx-shopping-bag'></i><span class="label">Online Store</span></a>
+
+    <div class="submenu-wrapper">
+      <button class="submenu-toggle" data-tooltip="Milk Shop">
+        <i class='bx bx-store'></i><span class="label">Milk Shop</span>
+        <i class='bx bx-chevron-right submenu-arrow'></i>
+      </button>
+      <div class="submenu">
+        <a href="#" data-tooltip="Dairy Shop"><i class='bx bx-store-alt'></i><span class="label">Dairy Shop</span></a>
+        <a href="#" data-tooltip="Dairy List"><i class='bx bx-list-ul'></i><span class="label">Dairy List</span></a>
+      </div>
+    </div>
+
+    <div class="submenu-wrapper">
+      <button class="submenu-toggle" data-tooltip="Admin">
+        <i class='bx bx-shield'></i><span class="label">Admin</span>
+        <i class='bx bx-chevron-right submenu-arrow'></i>
+      </button>
+      <div class="submenu">
+        <a href="#" data-tooltip="Create User"><i class='bx bx-user-plus'></i><span class="label">Create User</span></a>
+        <a href="#" data-tooltip="User List"><i class='bx bx-group'></i><span class="label">User List</span></a>
+        <a href="#" data-tooltip="Role Access"><i class='bx bx-key'></i><span class="label">Role Access</span></a>
+        <a href="#" data-tooltip="User Access"><i class='bx bx-lock-open-alt'></i><span class="label">User Access</span></a>
+      </div>
+    </div>
+
+    <div class="submenu-wrapper">
+      <button class="submenu-toggle" data-tooltip="Tractor">
+        <i class='bx bx-car'></i><span class="label">Tractor</span>
+        <i class='bx bx-chevron-right submenu-arrow'></i>
+      </button>
+      <div class="submenu">
+        <a href="#" data-tooltip="Tractor"><i class='bx bx-car'></i><span class="label">Tractor</span></a>
+        <a href="#" data-tooltip="Tractor Rent"><i class='bx bx-dollar'></i><span class="label">Tractor Rent</span></a>
+        <a href="#" data-tooltip="Tractor Rent by Customer"><i class='bx bx-user-voice'></i><span class="label">Tractor Rent by Customer</span></a>
+      </div>
+    </div>
+
+    <a href="#" data-tooltip="Membership"><i class='bx bx-credit-card'></i><span class="label">Membership</span></a>
+  </nav>
+</aside>
+
+<div class="overlay" id="overlay"></div>
+
+<header class="navbar">
+  <button id="hamburger" class="hamburger"><i class='bx bx-menu'></i></button>
+  <h1>Dashboard</h1>
+  <div class="navbar-actions">
+    <div class="profile" id="profileMenu">
+      <button class="profile-btn" id="profileBtn" aria-haspopup="true" aria-expanded="false" aria-label="User menu">
+        <span class="profile-circle"><i class='bx bx-user'></i></span>
+      </button>
+      <div class="profile-dropdown" id="profileDropdown" role="menu" aria-hidden="true">
+        <a href="#" class="dropdown-item" role="menuitem"><i class='bx bx-lock'></i><span>Change Password</span></a>
+        <a href="#" class="dropdown-item" role="menuitem"><i class='bx bx-cog'></i><span>Settings</span></a>
+        <a href="index.html" class="dropdown-item" role="menuitem"><i class='bxr  bx-door-open'></i> <span>Logout</span></a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="main" id="main-content" data-page="dashboard">
+  <p>Loading...</p>
+</main>
+
+<footer class="footer">
+  <p>&copy; 2025 NTSBook. All rights reserved.</p>
+</footer>
+
+<script src="assets/js/main-loader.js" defer></script>
+
+</body>
+</html>

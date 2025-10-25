@@ -1,0 +1,42 @@
+/* Page Transitions */
+.main-content {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.main-content.fade-out {
+  opacity: 0;
+}
+
+.main-content.fade-in {
+  opacity: 1;
+}
+
+/* Loading Spinner */
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+  color: var(--primary-color);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.loading-container.visible {
+  opacity: 1;
+}
+
+.loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid var(--primary-color);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
